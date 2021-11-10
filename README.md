@@ -50,9 +50,11 @@ Looks like — for the most part — the graphic was successfully exported. Yay!
 
 Illustrator should have created an `output` folder, with two PNG files and an HTML file. Open the HTML file!
 
-This is not what we wanted. We have a single HTML page with graphics from both artboards. Also, if you're a font nerd like me, yes, this is not Helvetica. 
+This is not what we wanted. We have a single HTML page with graphics from both artboards. 
 
-Don't give up just yet! We'll fix these problems one step at a time.
+🤓 Also, if you're a font nerd like me, yes, this is not Helvetica. 
+
+💪🏽 Don't give up just yet! We'll fix these problems one step at a time.
 
 ## 👮🏽 Act 4: Hello, rules!
 
