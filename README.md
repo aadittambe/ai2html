@@ -1,4 +1,4 @@
-# Hello, ai2html!
+# 👋🏽 Hello, ai2html!
 
 A step-by-step guide to creating a simple, responsive chart.
 
@@ -6,19 +6,19 @@ This tutorial will walk you through the process of building a static — yet res
 
 This tutorial is based on lessons by Jonathan Soma and uses documentation from the [ai2html](http://ai2html.org/) webpage. The structure of the tutorial draws inspiration from the [First News App](https://first-news-app.readthedocs.io/en/latest/#) tutorial by Ben Welsh.
 
-## Prelude: Prerequisites
+## ✅ Prelude: Prerequisites
 Before you can begin, here is what you will need to finish this walkthrough:
 - Abobe Illustrator
 - A code editor
 
-## Act 1: Hello, assets!
+## 📚 Act 1: Hello, assets!
 This GitHub repository will include all the code files that you will need to walkthrough. Here you find:
 - ai2html script (which can also be found [here](https://raw.githubusercontent.com/newsdev/ai2html/master/ai2html.js))
 - a .ai file with a graphic that's ready to be exported
 - an ai2html-config.json file
 - a JavaScript resizer function
 
-## Act 2: Hello, ai2html script!
+## 🖥 Act 2: Hello, ai2html script!
 Before we get started with out graphic, we need to tell Illustrator what ai2html means, and what we expect it to do. To achieve this, we are going to feed Illustrator the [ai2html](assets/ai2html.js) script, which is developed by the New York Times.
 
 Download [this](assets/ai2html.js) script, and the Times recommends saving it in the Illustrator folder, where other scripts are located.
@@ -28,9 +28,9 @@ For instance, if you are running Adobe Illustrator CC 2014, the path would be:
 Adobe Illustrator CC 2014/Presets/en_US/Scripts/ai2html.js
 ```
 
-Tip: When you're saving the script to your folder, make sure it's saving as JavaScript, `.js`, and not HTML, `.html`.
+💡 Tip: When you're saving the script to your folder, make sure it's saving as JavaScript, `.js`, and not HTML, `.html`.
 
-## Act 2: Hello, Illustrator (hey there, artboards)!
+## 🎨 Act 2: Hello, Illustrator (hey there, artboards)!
 Adobe Illustrator allows us to create multiple artboards for an illustrator. This is the property we'll use to ask Illustrator to generate responsive graphics. 
 
 Open Illustrator and get started with an artboard, which you will use to create a graphic for desktop. I'd recommend setting dimensions accordingly, for instance, 800 pixels wide and 500 pixels tall. Name this artboard "desktop."
@@ -54,7 +54,7 @@ This is not what we wanted. We have a single HTML page with graphics from both a
 
 Don't give up just yet! We'll fix these problems one step at a time.
 
-## Act 4: Hello, font rules!
+## 👮🏽 Act 4: Hello, rules!
 
 Let's go back to the Illustrator and see what the error messages are saying. Looks like it gave us a warning about fonts.
 
@@ -77,7 +77,7 @@ In Illustrator, execute the script again. `File > Scripts > Other Script... > ai
 Open the HTML file, and the font should be fixed!
 
 
-## Act 5: Hello, JavaScript! 
+## 👨‍💻 Act 5: Hello, JavaScript! 
 For the most part, things look great, but one problem still stands: We are still seeing both artboards at once. Let's fix that.
 
 Thankfully, the developers at the Times have given us a nifty resizer script that we can simply add to our graphic HTML output, and it will do the rest for us. Pretty neat.
@@ -104,9 +104,9 @@ Give the HTML file all the necessary attributes, so that your browser knows your
 </html>
 ```
 
-Tip: If you re-export your graphic, you will have to paste your resizer script again, because it will dissappear. 
+💡 Tip: If you re-export your graphic, you will have to paste your resizer script again, because it will dissappear. 
 
 Let's see what this looks like in a browser. Yay! We created a graphic that's resizing according to browser width AND the font-family is fixed!
 
-## Epilogue: Hello, third artboard!
-As more people are using tablets to consume the news, it's becoming critical to create graphics that size for iPads and other tablets. Create a third artboard with a graphic, that's specifically intended for tablets.
+## 🪖 Epilogue: Hello, deployment!
+You can publish this graphic on GitHub pages or deploy it on a cloud application platform such as Heroku. Use an IFrame embed code to embed the graphic in your story — and you're good to go!
