@@ -13,15 +13,15 @@ Before you can begin, here is what you will need to finish this walkthrough:
 
 ## 📚 Act 1: Hello, assets!
 This GitHub repository will include all the code files that you will need to walkthrough. Here you find:
-- ai2html script (which can also be found [here](https://raw.githubusercontent.com/newsdev/ai2html/master/ai2html.js))
-- a .ai file with a graphic that's ready to be exported
-- an ai2html-config.json file
-- a JavaScript resizer function
+- `ai2html.js` script (which can also be found [here](https://raw.githubusercontent.com/newsdev/ai2html/master/ai2html.js))
+- a `.ai` file with a graphic that's ready to be exported
+- an `ai2html-config.json` file
+- a JavaScript resizer function, `resizer_script.html`
 
 ## 👀 Act 2: Hello, ai2html script!
-Before we get started with out graphic, we need to tell Illustrator what ai2html means, and what we expect it to do. To achieve this, we are going to feed Illustrator the [ai2html](assets/ai2html.js) script, which is developed by the New York Times.
+Before we get started with our graphic, we need to tell Illustrator what ai2html means, and how we want it to execute our commands. To accomplish this, we are going to feed Illustrator the [ai2html](assets/ai2html.js) file, which consists of a script developed by the New York Times.
 
-Download [this](assets/ai2html.js) script, and the Times recommends saving it in the Illustrator folder, where other scripts are located.
+Download [this](assets/ai2html.js) script. It is recommended that you save it in the Illustrator folder, where other scripts are located.
 
 For instance, if you are running Adobe Illustrator CC 2014, the path would be:
 ```bash
@@ -31,18 +31,18 @@ Adobe Illustrator CC 2014/Presets/en_US/Scripts/ai2html.js
 💡 Tip: When you're saving the script to your folder, make sure it's saving as JavaScript, `.js`, and not HTML, `.html`.
 
 ## 🎨 Act 2: Hello, Illustrator (hey there, artboards)!
-Adobe Illustrator allows us to create multiple artboards for an illustrator. This is the property we'll use to ask Illustrator to generate responsive graphics. 
+Illustrator lets us to create multiple artboards for a graphic. We will use artboards to create responsive graphics. 
 
-Open Illustrator and get started with an artboard, which you will use to create a graphic for desktop. I'd recommend setting dimensions accordingly, for instance, 800 pixels wide and 500 pixels tall. Name this artboard "desktop."
+Open Illustrator and get started with an artboard, which you will use to create a graphic for desktop. I recommend setting dimensions accordingly, for instance, 800 pixels wide and 500 pixels tall. Name this artboard "desktop."
 
-This is great for desktop, but it may not work very well for handheld. Phones — and tablets, generally — are vertical and a landscape graphic may not work the best. 
+This is great for desktop, but it may not work very well for handheld. Phones — and tablets, generally — are vertical and a landscape graphic may work in terms of accessibility. 
 
-Create another artboard, this time, keep in mind that this version of the graphic is going to to be viewed solely on handheld devices. I'd recommend setting dimensions accordingly, perhaps 400 pixels wide and 1000 pixels tall. Let's name this artboard "handheld."
+Create another artboard, this time, keep in mind that this version of the graphic is going to to be viewed solely on handheld devices. I recommend setting dimensions accordingly, perhaps 400 pixels wide and 1000 pixels tall. Let's name this artboard "handheld."
 
 
 ## 🖥 Act 3: Hello, HTML!
 
-Let's export the graphic to see what happens. Click on `File > Scripts > Other Script... > ai2html.js`.
+Let's export the graphic to see what happens. Go to `File > Scripts > Other Script... > ai2html.js`.
 
 Let Illustrator process this and let's see what message we get. **Do not close out of the message just yet.**
 
@@ -50,13 +50,14 @@ Looks like — for the most part — the graphic was successfully exported. Yay!
 
 Illustrator should have created an `output` folder, with two PNG files and an HTML file. Open the HTML file!
 
-This is not what we wanted. We have a single HTML page with graphics from both artboards. 
-
-🤓 Also, if you're a font nerd like me, yes, this is not Helvetica. 
+Hmm. Two problems:
+- We have a single HTML page with graphics from both artboards.
+- If you look closely, this is not the font we want. We used Helvetica.
 
 💪🏽 Don't give up just yet! We'll fix these problems one step at a time.
 
 ## 👮🏽 Act 4: Hello, rules!
+We will start by fixing fonts.
 
 Let's go back to the Illustrator and see what the error messages are saying. Looks like it gave us a warning about fonts.
 
@@ -70,9 +71,9 @@ Let's go back to Illustrator and **copy the name of the font** it's looking to t
 
 For the world wide web, this particular font is called `Helvetica Neue`.
 
-Potato Potahto, I know!
+🥔 Potato-potahto, I know!
 
-In the `ai2html-config.json` — which should be sitting in the same directory as your `.ai` file — let's change the first `ai-font` to `Helvetica-Bold`. For this font, we the family to be `Helvetica Neue`. And since it's bold, let's give it a weight of 600.
+In the `ai2html-config.json` — which should be sitting in the same directory as your `.ai` file — let's set the first `ai-font` to `Helvetica-Bold`. For this font, we want the family to be `Helvetica Neue`. And since it's bold, let's give it a weight of 600.
 
 In Illustrator, execute the script again. `File > Scripts > Other Script... > ai2html.js`
 
