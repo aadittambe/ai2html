@@ -18,7 +18,7 @@ This GitHub repository will include all the code files that you will need to wal
 - an ai2html-config.json file
 - a JavaScript resizer function
 
-## 🖥 Act 2: Hello, ai2html script!
+## 👀 Act 2: Hello, ai2html script!
 Before we get started with out graphic, we need to tell Illustrator what ai2html means, and what we expect it to do. To achieve this, we are going to feed Illustrator the [ai2html](assets/ai2html.js) script, which is developed by the New York Times.
 
 Download [this](assets/ai2html.js) script, and the Times recommends saving it in the Illustrator folder, where other scripts are located.
@@ -40,7 +40,7 @@ This is great for desktop, but it may not work very well for handheld. Phones �
 Create another artboard, this time, keep in mind that this version of the graphic is going to to be viewed solely on handheld devices. I'd recommend setting dimensions accordingly, perhaps 400 pixels wide and 1000 pixels tall. Let's name this artboard "handheld."
 
 
-## Act 3: Hello, HTML!
+## 🖥 Act 3: Hello, HTML!
 
 Let's export the graphic to see what happens. Click on `File > Scripts > Other Script... > ai2html.js`.
 
