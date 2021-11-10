@@ -88,7 +88,7 @@ Head over to the [resizer script](assets/resizer_script.html) and copy it to you
 
 Open up the graphic HTML output in your code editor, and paste it on top of the graphic that ai2html has output.
 
-Give the HTML file all the necessary attributes, so that your browser knows your rendering HTML. Your HTML file should look like this
+Give the HTML file all the necessary attributes, so that your browser knows you're rendering HTML. Your HTML file should look like this
 ```bash
 <!DOCTYPE html>
 <html lang="en">
