@@ -15,7 +15,7 @@ Before you can begin, here is what you will need to finish this walkthrough:
 
 ## 📚 Act 1: Hello, assets!
 This GitHub repository will include all the code files that you will need to walkthrough. Here you find:
-- `ai2html.js` script (which can also be found [here](https://raw.githubusercontent.com/newsdev/ai2html/master/ai2html.js))
+- an `ai2html.js` script (which can also be found [here](https://raw.githubusercontent.com/newsdev/ai2html/master/ai2html.js))
 - a `.ai` file with a graphic that's ready to be exported
 - an `ai2html-config.json` file
 - a JavaScript resizer function, `resizer_script.html`
