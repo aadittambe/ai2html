@@ -2,6 +2,8 @@
 
 A step-by-step guide to creating a simple, responsive chart.
 
+Slide Deck [here](https://docs.google.com/presentation/d/1Btyhmg_uUvgqDFWIdLyOgFmGkmQxuEaRzIlWEMyMdY8/edit?usp=sharing).
+
 This guide will walk you through the process of building a static — yet responsive — chart with the ai2html tool. ai2html is an open-source tool developed by the New York Times that converts your Illustrator documents into html and css.
 
 This walkthrough is based on lessons by Jonathan Soma and uses documentation from the [ai2html](http://ai2html.org/) webpage. The structure of the walkthrough draws inspiration from the [First News App](https://first-news-app.readthedocs.io/en/latest/#) tutorial by Ben Welsh.
