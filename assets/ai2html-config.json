@@ -3,17 +3,11 @@
         {
             "aifont": "Helvetica-Bold",
             "family": "Helvetica Neue;",
-            "weight": "400",
-            "style": ""
-        },
-        {
-            "aifont": "HelveticaNeue-Bold",
-            "family": "Helvetica Neue",
             "weight": "700",
             "style": ""
         },
         {
-            "aifont": "HelveticaNeue",
+            "aifont": "Helvetica",
             "family": "Helvetica Neue",
             "weight": "400",
             "style": ""
